@@ -1,8 +1,7 @@
 #!/bin/bash
 # Script to allow Heroku API key to be pasted
 # exported as an environment variable
-#
-# Matt Rudge, May 2021
+
 
 echo Heroku authentication configuration script
 echo Code Institute, 2021
