@@ -6,15 +6,14 @@ MindBodyHealth is a django-based blog site which runs in the Code Institute mock
 
 Upon visiting MindBodyHealth's website, the user will be greeted with the homepage which contains the navigation links and the first page of the collected stories. The user can freely click on any feature or story to discover its content in detail. This blog site is responsive to all device sizes and works effectively on all types of browsers.
 
-<img src="./assets/images/responsiveness-screenshot.png" alt="Responsiveness Screenshot">
-
-Source: [Responsivity measurement](https://ui.dev/amiresponsive?url=https://goziechukwu.github.io/JavaScript-Python-Diff-Quiz/)
 
 ## Features
 
 ### Home Section
 
 The Home Section is the first page the site user is greeted with upon visiting the site for the first time. It is open to all site visitors and registered users. The stories are displayed on the Home page. At the bottom of the home page contains the blow owner's name and links to the blog owner's social media accounts.
+
+<img src="./static/images/home-page.PNG" alt="Responsiveness Screenshot">
 
 ### About Section
 
@@ -31,13 +30,17 @@ The Login Section contains the login page for registered users. Site visitors wh
 
 ## Technologies Used
 
-The website was designed using the following programming languages:
+The website was designed using the following hosting services and programming languages:
 
 - Django
 
+- Cloudinary (for external image management)
+
+- ElephantSQL for the PostgreSQL
+
 - Python
 
-- JAVASCRIPT
+- JavaScript
 
 - HTML5
 
@@ -51,53 +54,50 @@ The Codeanywhere workspace was used to write the code.
 
 • The fonts used were obtained from the Google Fonts library in google
 
+
 ## Validation Testing
 
 The author has tested the website's user interface and has found out that it looks the same on the browsers- Google Chrome, Mozilla Firefox and Microsoft.
 
-The HTML and CSS codes have been tested for validation in the w3C HTML Validator and the w3C (Jigsaw) CSS Validator respectively, and no errors were returned.
+- The HTML codes have been tested using validation by url in the w3C HTML Validator and no errors were returned.
 
-<img src="./assets/images/validation-testing-screenshot-1.PNG" alt="First Validation Testing">
+<img src="./static/images/html-validation.PNG" alt="HTML Validation Testing">
 
-<img src="./assets/images/validation-testing-screenshot-2.PNG" alt="Second Validation Testing">
+- The Python code for the blog views have also been tested and returned no errors.
 
-The Python code for the blog views have also been tested and returned no errors.
-
-<img src="./assets/images/validation-testing-screenshot-2.PNG" alt="Second Validation Testing">
+<img src="./assets/images/python-code-test-results.PNG" alt="Python Validation Testing">
 
 
 ## Testing Forms and Views
 
 The forms and views have been tested on the codeanywhere workspace terminal and the tests, totalling to 10 tests returned successful.
 
-<img src="./assets/images/validation-testing-screenshot-2.PNG" alt="Second Validation Testing">
+<img src="./assets/images/test-run-success.PNG" alt="Testing Results for Forms and Views">
 
 
 ## Accessibility Requirements
 
-JavaScript-Python-Diff-Quiz has been tested using Lighthouse on Google and found to completely meet Accessibility Requirements, in addition to having Best Practices, and more, as indicated in the screenshot below:
+MindBodyHealth has been tested using Lighthouse on Google and found to completely meet Accessibility Requirements, in addition to having Best Practices, and more, as indicated in the screenshot below:
 
-<img src="./assets/ima alt="Accessibility Requirements Score">
+<img src="./static/images/lighthouse-report.PNG" alt="Accessibility Requirements Score">
 
-## File Structure
 
-Folders and Files in the workspace are created as follows:
+## Deployment to Heroku
 
-Folders: - Assets folder
+The full-stack project was deployed using the Code Institute's Heroku mock terminal by the following major steps:
 
-Contents: - CSS folder, JS folder and Images folder.
+- Clone or fork the repository
+- Click the "Create New App" button in the Heroku platform
+- Add the keys: CLOUDINARY_URL, DATABASE_URL, and their values from their corresponding files.
+- I also added a SECRET_KEY and created a private value for it
+- From the Settings, I linked the app to the repository
+- Click on the "Deploy" button
 
-Files: - index.html, style.css (in the CSS folder) and script.js (in the JS folder) files.
+The project was deployed to heroku with the following link: [MindBodyHealth Heroku App](https://mind-body-health-1a3a657f9bb9.herokuapp.com/)
 
-## Deployment
 
-The site was deployed to GitHub pages by the following steps:
-Navigating in the GitHub repository to the Settings tab,
-Clicking the drop-down menu under the source section and selecting 'Master Branch', and finally waiting for the page to refresh and display a detailed ribbon sign indicating that deployment was successful.
-
-This brought forth, under the Pages section under Settings, JavaScript-Python-Diff-Quiz's live link which is as follows:
-
-<https://goziechukwu.github.io/JavaScript-Python-Diff-Quiz/>
+## Bugs, and How I Fixed Them
+I had initially used i-tags for the social media links, but because I wanted them to be active, I added href attributes and changed the tags to anchor tags.
 
 ## Contact information
 
@@ -107,6 +107,12 @@ Email: inekwegoziechukwu@gmail.com
 
 ## Acknowledgements and References
 
-- _JavaScript Logic_: The logic used in the javascript was a mix of a collection of my(the author's) Personal Ideas, ideas from my Mentor at Code Institute and ideas from [Chat GPT 3.5](https://chat.openai.com/).
+- _Blog Post Content_: The contents of the blog posts are real life stories of individuals, extracted from the blog owner's personal testimony and from the book titled "The 5 Resets" written by the Harvard stress expert, Dr. Nerurkar Aditi.
 
-- _Code Institute Form Dump Url_: The [Code Institute's Form Dump url](https://formdump.codeinstitute.net/) was used in my code for the posting of the form in the 'signup.html'.
+- _Code Institute's Mock Terminal Form Dump Url_: The [Code Institute's Form Dump url](https://formdump.codeinstitute.net/) was used in my code for the posting of the form in the 'signup.html'.
+
+- _User Interface, Experience and Logic Design_: A large part of the UI/UX and website interactivity design were obtained from the mock project- _Codestar blog_ by the Code Institute.
+
+- _Deployment Terminal_: The deployment terminal used in the project was created by Code Institute.
+
+- _Images_: All images were downloaded from [Pixabay](pixabay.com) free source, except the image in the About Section of the blog site, which was downloaded from the mock project- _Codestar blog_ by the Code Institute.
