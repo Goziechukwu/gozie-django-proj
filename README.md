@@ -109,10 +109,8 @@ Email: inekwegoziechukwu@gmail.com
 
 - _Blog Post Content_: The contents of the blog posts are real life stories of individuals, extracted from the blog owner's personal testimony and from the book titled "The 5 Resets" written by the Harvard stress expert, Dr. Nerurkar Aditi.
 
-- _Code Institute's Mock Terminal Form Dump Url_: The [Code Institute's Form Dump url](https://formdump.codeinstitute.net/) was used in my code for the posting of the form in the 'signup.html'.
-
 - _User Interface, Experience and Logic Design_: A large part of the UI/UX and website interactivity design were obtained from the mock project- _Codestar blog_ by the Code Institute.
 
 - _Deployment Terminal_: The deployment terminal used in the project was created by Code Institute.
 
-- _Images_: All images were downloaded from [Pixabay](pixabay.com) free source, except the image in the About Section of the blog site, which was downloaded from the mock project- _Codestar blog_ by the Code Institute.
+- _Images_: All images were downloaded from [Pixabay](pixabay.com) free online source, except the image in the About Section of the blog site, which was downloaded from the mock project- _Codestar blog_ by the Code Institute.
