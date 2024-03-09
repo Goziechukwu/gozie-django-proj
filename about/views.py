@@ -9,7 +9,7 @@ from .forms import CollaborateForm
 def about_me(request):
     """
     Delivers the most recent information on the website author
-    and allows user collaboration requests
+    and allows user to submit collaboration requests
     Displays an individual instance of :model:`about.About`.
     **Context**
     ``about``
