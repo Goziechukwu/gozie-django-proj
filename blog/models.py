@@ -8,7 +8,8 @@ STATUS = ((0, "Draft"), (1, "Published"))
 
 class Post(models.Model):
     """
-    Stores a single blog post entry related to :model:`auth.User`.
+    Stores a single blog post entry related to :model:`auth.User`
+    and counts the number of likes
     """
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
@@ -22,11 +23,18 @@ class Post(models.Model):
     excerpt = models.TextField(blank=True)
     updated_on = models.DateTimeField(auto_now=True)
 
+    # New field for tracking likes
+    likes = models.ManyToManyField(User, related_name='post_likes', blank=True)
+
+
     class Meta:
         ordering = ["-created_on"]
 
     def __str__(self):
         return f"{self.title} | written by {self.author}"
+
+    def num_likes(self):
+        return self.likes.count()
 
 
 class Comment(models.Model):

@@ -72,6 +72,16 @@ def post_detail(request, slug):
     )
 
 
+def post_like(request, slug):
+    post = get_object_or_404(Post, slug=slug)
+    if request.user.is_authenticated:
+        if request.user in post.likes.all():
+            post.likes.remove(request.user)
+        else:
+            post.likes.add(request.user)
+    return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+
+
 def comment_edit(request, slug, comment_id):
     """
     Display an individual comment for edit.
