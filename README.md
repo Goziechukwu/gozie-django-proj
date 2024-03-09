@@ -65,14 +65,14 @@ The author has tested the website's user interface and has found out that it loo
 
 - The Python code for the blog views have also been tested and returned no errors.
 
-<img src="./assets/images/python-code-test-results.PNG" alt="Python Validation Testing">
+<img src="./static/images/python-code-test-results.PNG" alt="Python Validation Testing">
 
 
 ## Testing Forms and Views
 
 The forms and views have been tested on the codeanywhere workspace terminal and the tests, totalling to 10 tests returned successful.
 
-<img src="./assets/images/test-run-success.PNG" alt="Testing Results for Forms and Views">
+<img src="./static/images/test-run-success.PNG" alt="Testing Results for Forms and Views">
 
 
 ## Accessibility Requirements
