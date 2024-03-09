@@ -13,7 +13,7 @@ Upon visiting MindBodyHealth's website, the user will be greeted with the homepa
 
 The Home Section is the first page the site user is greeted with upon visiting the site for the first time. It is open to all site visitors and registered users. The stories are displayed on the Home page. At the bottom of the home page contains the blow owner's name and links to the blog owner's social media accounts.
 
-<img src="./static/images/home-page.PNG" alt="Responsiveness Screenshot">
+<img src="./static/images/home-page.PNG" alt="Home Page">
 
 ### About Section
 
