@@ -2,9 +2,16 @@
 
 MindBodyHealth is a django-based blog site which runs in the Code Institute mock terminal on Heroku. It seeks to help people learn to thrive in this fast-paced and highly-demanding world by collecting testimonies of people who overcame chronic stress, burnout and mental health challenges by applying scientifically proven simple techniques proferred to them by their counsellors that rewired their brains and restored and retained their mind and body health. The site will be targeted towards all kinds of people, but especially towards students, workers and parents on whom the demands of society keep increasing on every side. The stories in this blog site are real and have been recorded by book authors, some of which were their own experiences and others their counsellees' experiences. 
 
+
 ## Using MindBodyHealth
 
 Upon visiting MindBodyHealth's website, the user will be greeted with the homepage which contains the navigation links and the first page of the collected stories. The user can freely click on any feature or story to discover its content in detail. This blog site is responsive to all device sizes and works effectively on all types of browsers.
+
+<img src="./static/images/responsivity-test1.PNG" alt="Responsivity on Laptops">
+
+<img src="./static/images/responsivity-test2.PNG" alt="Responsivity on Tablets">
+
+<img src="./static/images/responsivity-test3.PNG" alt="Responsivity on Handsets">
 
 
 ## Features
@@ -19,13 +26,26 @@ The Home Section is the first page the site user is greeted with upon visiting t
 
 The About Section contains information about the blog owner and the motivation for creating the website. The About Section also contains a "Let's collaborate" subsection which is for individuals who have a project in mind, wish to co-author an article, or simply want to brainstorm some ideas.
 
+<img src="./static/images/about-section.PNG" alt="About Section">
+
 ### Register Section
 
 The Register Section contains the Sign-Up form for site visitors who would love to register on the platform. Registered users can both read posts and comment on a post, but site visitors can only read posts and comments.
 
+<img src="./static/images/register-section.PNG" alt="SignUp Section for Registration">
+
 ### Login Section
 
 The Login Section contains the login page for registered users. Site visitors who visit the login page have a signup external link placed there so they can directly signup from there as they can from the Sign Up page.
+
+<img src="./static/images/login-section.PNG" alt="Login or Sign-In Section">
+
+
+## Wireframes
+
+The skeletal structure of the User Interface that focus on the arrangement of the elements and the overall user flow can be seen in the image below:
+
+<img src="./static/images/wireframe.png" alt="Wireframes">
 
 
 ## Technologies Used
@@ -96,8 +116,43 @@ The full-stack project was deployed using the Code Institute's Heroku mock termi
 The project was deployed to heroku with the following link: [MindBodyHealth Heroku App](https://mind-body-health-1a3a657f9bb9.herokuapp.com/)
 
 
+## User Stories
+
+### Site Users
+
+A site user can:
+
+- view a paginated list of posts to select which post to view.
+- click on a post to read the full text.
+- view comments on individual posts to read the conversation.
+- register an account so as to be able to comment on a post.
+- like or unlike a post, so as to appreciate the writer.
+
+
+### Registered Users
+
+A registered user can:
+
+- leave comments on a post in order to be involved in the conversation.
+- modify or delete his or her comment on a post so as to be involved in the conversation.
+- create, read, update and delete posts so as to manage his or her blog content.
+- create draft posts in order to finish writing the content later.
+
+
+### Site Administrators
+
+A site admin can:
+
+- approve or disapprove comments in order to filter out objectionable comments.
+- create or update the About page so that it is available on the site.
+
+
 ## Bugs, and How I Fixed Them
-I had initially used i-tags for the social media links, but because I wanted them to be active, I added href attributes and changed the tags to anchor tags.
+
+I discovered my "Edit" button for posted comments was not responding to the click event, in order to fix this, I checked the button id on the post html and the button id on the comment section JavaScript and found that I had used the wrong button id on the post html. I then changed the button id for the "Edit" button on the post html to correspond with the button id for the edit-event listening function in the comment section javascript. This solved the issue.
+
+Secondly I discovered that when comments have not been approved yet by the admin, they were visible in blur form to not only the maker of the comment, but to other registered users. To fix this, I placed the comment-form variable definition above the post-request condition in the blog views python file. This action solved the issue.
+
 
 ## Contact information
 
@@ -109,7 +164,7 @@ Email: inekwegoziechukwu@gmail.com
 
 - _Blog Post Content_: The contents of the blog posts are real life stories of individuals, extracted from the blog owner's personal testimony and from the book titled "The 5 Resets" written by the Harvard stress expert, Dr. Nerurkar Aditi.
 
-- _User Interface, Experience and Logic Design_: A large part of the UI/UX and website interactivity design were obtained from the mock project- _Codestar blog_ by the Code Institute.
+- _User Interface, Experience and Logic Design_: A large part of the UI/UX and website interactivity design ideas were obtained from the mock project- _Codestar blog_ by the Code Institute.
 
 - _Deployment Terminal_: The deployment terminal used in the project was created by Code Institute.
 

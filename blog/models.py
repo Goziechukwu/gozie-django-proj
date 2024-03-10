@@ -6,6 +6,7 @@ STATUS = ((0, "Draft"), (1, "Published"))
 
 # Create your models here.
 
+
 class Post(models.Model):
     """
     Stores a single blog post entry related to :model:`auth.User`
@@ -25,7 +26,6 @@ class Post(models.Model):
 
     # New field for tracking likes
     likes = models.ManyToManyField(User, related_name='post_likes', blank=True)
-
 
     class Meta:
         ordering = ["-created_on"]
