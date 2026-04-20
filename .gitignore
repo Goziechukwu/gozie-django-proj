@@ -9,3 +9,6 @@ node_modules/
 cloudinary_python.txt
 blog/fixtures/
 db.sqlite3
+.venv/
+.env
+*.log
